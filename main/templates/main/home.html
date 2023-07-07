@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Home</h1>
+<p> Bienvenidos al portal de reportes de UNPAC</p>
+<a href="{% url 'empresa' %}">Comite de Empresa</a>
+<a href="{% url 'itinerarios' %}">Comite de Itinerarios</a>
+<a href="{% url 'transporte' %}">Comite de Transporte</a>
+<a href="{% url 'hoteles' %}">Comite de Hoteles</a>
+
+{% endblock %}
