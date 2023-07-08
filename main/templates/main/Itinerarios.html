@@ -1,11 +1,33 @@
 {% extends 'main.html' %}
 {% block content %}
-<h1>Comite de Itinerarios</h1>
-
 {% load static %}
-<div class="container text-center">
-  <h1 class="display-2"> Contactanos</h1>
-<div class="form-control">
+<div class="container">
+  <h1 class="display-6 text-center">Comite de Itinerarios</h1>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-1 me-auto">
+        <div class="fw-bold">Capitán Ilma Velásquez</div>
+        +50766770287 / ivelasquez@unpac-panama.com
+      </div>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+       <div class="ms-1 me-auto">
+        <div class="fw-bold">Capitán Luis Young</div>
+        +50765001599 / lyoung@unpac-panama.com
+      </div>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-1 me-auto">
+        <div class="fw-bold">Capitán Alejandro Bonilla</div>
+        +50760903568 / abonilla@unpac-panama.com
+      </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-1 me-auto">
+        <div class="fw-bold">Capitán Gonzalo Galán</div>
+          +50760904410 / ggalan@unpac-panama.com
+      </div>
+    </li>
+</ul>
+<div class="form-control text-center">
     <h2>unpac@unpac-panama.com</h2>
     {% if message_name %}
     <h2>Gracias, {{message_name}}!</h2>

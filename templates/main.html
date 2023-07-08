@@ -14,7 +14,8 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
 
 </head>
-<body>
+<body style= "background-image: url('{% static '/img/background.png' %}')">
+    {% include 'nav.html' %}
     {% block content %}
 
 

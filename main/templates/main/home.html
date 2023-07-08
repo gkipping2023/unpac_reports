@@ -1,11 +1,32 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<h1>Home</h1>
+<div class="container text-center">
+    <h1>Home</h1>
 <p> Bienvenidos al portal de reportes de UNPAC</p>
-<a href="{% url 'empresa' %}">Comite de Empresa</a>
-<a href="{% url 'itinerarios' %}">Comite de Itinerarios</a>
-<a href="{% url 'transporte' %}">Comite de Transporte</a>
-<a href="{% url 'hoteles' %}">Comite de Hoteles</a>
-
+<div class="container">
+    <div class="row text-center m-3">
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'itinerarios' %}">Comite de Itinerarios</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'empresa' %}">Comite de Empresa</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'entrenamiento' %}">Comite de Entrenamiento</a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'hoteles' %}">Comite de Hoteles, Alimentacion y Transporte</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'seg_op' %}">Comite de Seguridad Operacional</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="{% url 'sal_oc' %}">Comite de Seguridad y Salud Ocupacional</a>
+        </div>
+    </div>
+</div>
+</div>
 {% endblock %}
