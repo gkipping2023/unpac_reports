@@ -31,16 +31,33 @@
     <form method="POST" action="">
         {% csrf_token %}
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" name="message-name" placeholder="Ingresa tu nombre">
+            <label for="exampleFormControlInput1" class="form-label">Fecha:</label>
+            <input type="text" class="form-control" name="date" placeholder="Ingresa la Fecha">
+            {{reportes_form.date}}
           </div>
         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Comite:</label>
+            <input type="text" class="form-control" name="comite" placeholder="Selecciona un Comite">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+          <input type="email" class="form-control" name="nombre" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+          <input type="email" class="form-control" name="apellido" placeholder="Apellido">
+        </div>
+        <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo Electronico:</label>
-            <input type="email" class="form-control" name="message-email" placeholder="name@example.com">
+            <input type="email" class="form-control" name="correo" placeholder="name@correo.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-            <textarea class="form-control" name="message-text" rows="6" placeholder="Ingresa tu Mensaje"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">Detalle del Reporte:</label>
+            <textarea class="form-control" name="detalle" rows="6" placeholder="Detalle su Reporte"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="myfile">Selecciona una Imagen:</label>
+            <input type="file" id="myfile" name="myfile">
           </div>
           <input class="btn btn-primary" type="submit" value="Enviar" />
     </form>

@@ -31,19 +31,7 @@
     {% else %}
     <form method="POST" action="">
         {% csrf_token %}
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" name="message-name" placeholder="Ingresa tu nombre">
-          </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo Electronico:</label>
-            <input type="email" class="form-control" name="message-email" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-            <textarea class="form-control" name="message-text" rows="6" placeholder="Ingresa tu Mensaje"></textarea>
-          </div>
-          <input class="btn btn-primary" type="submit" value="Enviar" />
+        {{reportes_form.as_p}}
     </form>
     {% endif %}
 </div>
